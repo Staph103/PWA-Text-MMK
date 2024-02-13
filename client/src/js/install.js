@@ -32,4 +32,19 @@ butInstall.addEventListener('click', async () => {
   });
 
 // TODO: Add an handler for the `appinstalled` event
-window.addEventListener('appinstalled', (event) => {});
+window.addEventListener('appinstalled', (event) => {
+    // The app has been successfully installed
+    console.log('App installed successfully');
+  });
+  
+  // Function to show the install button or any other UI element used for installation
+  function showInstallButton() {
+    // Show the install button or any other UI element
+    butInstall.style.display = 'block';
+  }
+  
+  // Function to hide the install button or any other UI element used for installation
+  function hideInstallButton() {
+    // Hide the install button or any other UI element
+    butInstall.style.display = 'none';
+  }
